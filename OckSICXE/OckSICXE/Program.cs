@@ -39,7 +39,7 @@ internal class Program
         int i;
         bool RFlag = true;
         string[] Arguments = Instruction.FormatLine(SICProgramLines[0]);
-        using (StreamWriter writer = new StreamWriter(intermediateFile))
+        using (StreamWriter writer = new StreamWriter("OckSICXE" + Path.DirectorySeparatorChar +intermediateFile))
         {
             if (Arguments[OpcodeIndex].Equals("START"))
             {
